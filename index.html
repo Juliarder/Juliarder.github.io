@@ -1,36 +1,407 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Моё описание</title>
-  </head>
-  <body>
-    <main>
-      <h1>Lodkin Julian</h1>
-      <h2>Lorem, ipsum.</h2>
-      
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>About me</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dignissimos nulla beatae. Quidem, consequatur sed.</p>
-      </section>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Юлиан Лодкин — разработчик цифровых продуктов. Telegram-боты, FastAPI, PostgreSQL, Android-приложения, автоматизация и MVP под ключ.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Юлиан Лодкин — разработчик цифровых продуктов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="На главную">
+      <span class="brand-mark">JL</span>
+      <span class="brand-text">Юлиан Лодкин</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#projects">Проекты</a>
+      <a href="#services">Что делаю</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contact" class="nav-cta">Связаться</a>
+    </nav>
+
+    <button class="menu-button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          Открыт к проектной работе
+        </div>
+
+        <h1>
+          Создаю цифровые продукты
+          <span class="gradient-text">от идеи до запуска.</span>
+        </h1>
+
+        <p class="hero-lead">
+          Telegram-боты, backend-сервисы, веб-админки, Android-приложения
+          и автоматизация для бизнеса. Беру задачу целиком: логика, интерфейс,
+          код, база данных, интеграции и deployment.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Смотреть проекты</a>
+          <a class="button button-secondary" href="https://t.me/JulianLodkin" target="_blank" rel="noopener">Написать в Telegram</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div>
+            <strong>3</strong>
+            <span>готовых кейса</span>
+          </div>
+          <div>
+            <strong>1</strong>
+            <span>приложение в RuStore</span>
+          </div>
+          <div>
+            <strong>Full cycle</strong>
+            <span>идея → production</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1" aria-hidden="true">
+        <div class="code-window">
+          <div class="window-bar">
+            <span></span><span></span><span></span>
+            <em>product_stack.py</em>
+          </div>
+          <pre><code><span class="c-purple">class</span> <span class="c-blue">ProductDeveloper</span>:
+    <span class="c-muted"># от задачи до работающего продукта</span>
+
+    skills = [
+        <span class="c-green">"Python / FastAPI"</span>,
+        <span class="c-green">"PostgreSQL / SQLAlchemy"</span>,
+        <span class="c-green">"Telegram / aiogram"</span>,
+        <span class="c-green">"Android / C#"</span>,
+        <span class="c-green">"JavaScript / HTML / CSS"</span>,
+        <span class="c-green">"Git / Cloud / Deploy"</span>
+    ]
+
+    <span class="c-purple">def</span> <span class="c-blue">build</span>(idea):
+        <span class="c-purple">return</span> <span class="c-green">"working product"</span></code></pre>
+        </div>
+
+        <div class="floating-card floating-card-a">
+          <span>API</span>
+          <strong>FastAPI</strong>
+        </div>
+        <div class="floating-card floating-card-b">
+          <span>DB</span>
+          <strong>PostgreSQL</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="section-shell trust-grid">
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>PostgreSQL</span>
+        <span>Telegram</span>
+        <span>Android</span>
+        <span>JavaScript</span>
+        <span>GitHub</span>
+        <span>Render</span>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-shell">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">Избранные проекты</p>
+          <h2>Не учебные обещания — <span>рабочие результаты.</span></h2>
+        </div>
+        <p>
+          Три проекта разного масштаба: мобильный продукт, интерактивное
+          веб-приложение и B2B-система с backend и облачной инфраструктурой.
+        </p>
+      </div>
+
+      <article class="project project-featured reveal">
+        <div class="project-visual destiny-visual">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="destiny-top">
+                <span>Destiny 22</span>
+                <b>✦</b>
+              </div>
+              <div class="destiny-orbit">
+                <span class="orbit orbit-1"></span>
+                <span class="orbit orbit-2"></span>
+                <span class="orbit orbit-3"></span>
+                <strong>22</strong>
+              </div>
+              <div class="destiny-cards">
+                <i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-topline">
+            <span class="project-number">01</span>
+            <span class="project-type">Android · Product</span>
+          </div>
+          <h3>Destiny 22</h3>
+          <p class="project-description">
+            Android-приложение, созданное с нуля и доведённое до публикации
+            в RuStore. Проект включает собственную расчётную логику,
+            профили, несколько функциональных разделов, Free/Premium-модель,
+            временный доступ за рекламу, подготовку платежей и backend-архитектуру.
+          </p>
+
+          <div class="project-points">
+            <span>Продуктовая логика</span>
+            <span>Android</span>
+            <span>Монетизация</span>
+            <span>46k+ проверок</span>
+            <span>RuStore</span>
+          </div>
+
+          <div class="project-result">
+            <strong>Результат</strong>
+            <p>Рабочее приложение опубликовано в магазине, развивается по обратной связи пользователей.</p>
+          </div>
+
+          <div class="project-links">
+            <a class="text-link" href="https://www.rustore.ru/catalog/app/ru.destiny22.app" target="_blank" rel="noopener">Открыть в RuStore ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-visual clientflow-visual">
+          <div class="dashboard">
+            <div class="dashboard-head">
+              <b>ClientFlow</b>
+              <span></span>
+            </div>
+            <div class="dashboard-stats">
+              <i><b>12</b><small>Всего</small></i>
+              <i><b>4</b><small>Новые</small></i>
+              <i><b>5</b><small>В работе</small></i>
+              <i><b>3</b><small>Готово</small></i>
+            </div>
+            <div class="dashboard-table">
+              <div></div><div></div><div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-topline">
+            <span class="project-number">02</span>
+            <span class="project-type">Python · Backend · B2B</span>
+          </div>
+          <h3>ClientFlow</h3>
+          <p class="project-description">
+            Система приёма и обработки заявок для малого бизнеса:
+            Telegram-бот, FastAPI backend, PostgreSQL, защищённая веб-админка,
+            статусы, уведомления клиентам и production deployment.
+          </p>
+
+          <div class="project-points">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>aiogram</span>
+            <span>Neon</span>
+            <span>Render</span>
+          </div>
+
+          <div class="project-result">
+            <strong>Архитектура</strong>
+            <p>Telegram → webhook → FastAPI → PostgreSQL → веб-админка → уведомление клиента.</p>
+          </div>
+
+          <div class="project-links">
+            <a class="text-link" href="https://clientflow-demo-6nta.onrender.com" target="_blank" rel="noopener">Live demo ↗</a>
+            <a class="text-link secondary-link" href="https://github.com/Juliarder/clientflow_bot" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <p class="demo-note">Демо размещено на бесплатном Render и может просыпаться до ~1 минуты.</p>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-visual drum-visual">
+          <div class="drum-grid">
+            <button>A<small>CLAP</small></button>
+            <button>S<small>HIHAT</small></button>
+            <button>D<small>KICK</small></button>
+            <button>F<small>OPEN</small></button>
+            <button>G<small>BOOM</small></button>
+            <button>H<small>RIDE</small></button>
+            <button>J<small>SNARE</small></button>
+            <button>K<small>TOM</small></button>
+            <button>L<small>TINK</small></button>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-topline">
+            <span class="project-number">03</span>
+            <span class="project-type">JavaScript · Frontend</span>
+          </div>
+          <h3>Drum Machine</h3>
+          <p class="project-description">
+            Интерактивная драм-машина на чистом JavaScript. Девять клавиш,
+            HTML Audio API, управление с физической клавиатуры, остановка
+            предыдущего звука и визуальная реакция интерфейса.
+          </p>
+
+          <div class="project-points">
+            <span>Vanilla JS</span>
+            <span>DOM</span>
+            <span>Audio API</span>
+            <span>CSS Animation</span>
+            <span>GitHub Pages</span>
+          </div>
+
+          <div class="project-result">
+            <strong>Что показывает</strong>
+            <p>Умение быстро разобрать техническое задание и довести его до работающего публичного результата.</p>
+          </div>
+
+          <div class="project-links">
+            <a class="text-link" href="https://juliarder.github.io/drumm_sampler/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a class="text-link secondary-link" href="https://github.com/Juliarder/drumm_sampler" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="services" class="services section-shell">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">Чем могу быть полезен</p>
+          <h2>Разработка под <span>конкретную бизнес-задачу.</span></h2>
+        </div>
+        <p>
+          Не привязываюсь к одному типу продукта: сначала разбираюсь,
+          какой результат нужен бизнесу, затем подбираю реализацию.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <span class="service-icon">01</span>
+          <h3>Telegram-боты</h3>
+          <p>Заявки, запись клиентов, уведомления, интеграции, базы данных и автоматизация рутинных процессов.</p>
+        </div>
+        <div class="service-card reveal delay-1">
+          <span class="service-icon">02</span>
+          <h3>Backend и админки</h3>
+          <p>FastAPI, REST API, PostgreSQL, авторизация, бизнес-логика, панели управления и deployment.</p>
+        </div>
+        <div class="service-card reveal delay-2">
+          <span class="service-icon">03</span>
+          <h3>MVP и прототипы</h3>
+          <p>Быстро превращаю идею в первую рабочую версию, которую уже можно показать пользователям и проверить спрос.</p>
+        </div>
+        <div class="service-card reveal delay-3">
+          <span class="service-icon">04</span>
+          <h3>Цифровые продукты</h3>
+          <p>Проектирование логики, интерфейсов, Android-приложений и сервисов с дальнейшим развитием продукта.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section-shell">
+      <div class="about-card reveal">
+        <div class="about-copy">
+          <p class="kicker">Обо мне</p>
+          <h2>Техническое мышление + продуктовый подход.</h2>
+          <p>
+            Мне интереснее всего создавать систему с нуля: понять задачу,
+            спроектировать решение, собрать рабочий продукт и довести его
+            до реального запуска. Я быстро осваиваю новые технологии
+            под конкретную задачу и предпочитаю измеримый результат
+            вместо бесконечной разработки «в стол».
+          </p>
+          <p>
+            Сейчас развиваюсь в направлении разработки цифровых продуктов,
+            backend и автоматизации. Обучаюсь по специальности
+            «Информационные системы и программирование».
+          </p>
+        </div>
+
+        <div class="skills-panel">
+          <p>Основной стек</p>
+          <div class="skill-list">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>SQLAlchemy</span>
+            <span>aiogram</span>
+            <span>JavaScript</span>
+            <span>HTML / CSS</span>
+            <span>C#</span>
+            <span>Android</span>
+            <span>REST API</span>
+            <span>Git / GitHub</span>
+            <span>Render / Neon</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="process reveal">
+        <div>
+          <span>01</span>
+          <h3>Разбираю задачу</h3>
+          <p>Что нужно получить, кому это нужно и какой результат считаем успешным.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <h3>Проектирую решение</h3>
+          <p>Логика, сценарии, архитектура, база данных и минимально достаточный MVP.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <h3>Разрабатываю</h3>
+          <p>Код, интерфейс, интеграции, тестирование и исправление узких мест.</p>
+        </div>
+        <div>
+          <span>04</span>
+          <h3>Запускаю</h3>
+          <p>Deployment, проверка production-сценария и дальнейшее развитие продукта.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-shell reveal">
+      <div class="contact-card">
+        <div>
+          <p class="kicker">Есть задача?</p>
+          <h2>Давайте превратим её в <span class="gradient-text">работающий продукт.</span></h2>
+          <p>
+            Опишите, что хотите автоматизировать, запустить или проверить.
+            Я помогу разобрать задачу и предложить реалистичный первый этап.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button button-primary" href="https://t.me/JulianLodkin" target="_blank" rel="noopener">Telegram</a>
+          <a class="button button-secondary" href="https://github.com/Juliarder" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <span>© <span id="year"></span> Юлиан Лодкин</span>
+    <span>Разработка цифровых продуктов</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
